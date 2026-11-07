@@ -4,7 +4,7 @@ int bns(int a[],int l,int r,int x ){//trái(l) phải(r),x cần tìm
 if(l<=r){
 int mid=(l+r)/2;
 if(a[mid]==x){//nếu mảng a [mid] mà bằng giá trị x thì trả về 1 luôn
-return 1;
+return 1;//true:đúng,0(false):sai.
 }
 else if(a[mid]>x)//theo đúng lý thuyết thì bé hơn nhưng do đây là bài giảm dần
 return bns(a,mid+1,r,x);//nếu ở giữa bé hơn giá trị cần tìm x,thì left=mid+1 giá trị bên phải(r)
